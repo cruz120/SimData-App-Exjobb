@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swimpoolreports"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.swimpoolreports.SwimpoolReportsFragment">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addEntryButton"
+        android:layout_width="57dp"
+        android:layout_height="61dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <LinearLayout
+        android:layout_width="587dp"
+        android:layout_height="900dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="7dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/listview_reports"
+            android:layout_width="match_parent"
+            android:layout_height="901dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/swimmingPoolName"
+        android:layout_width="225dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="106dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
